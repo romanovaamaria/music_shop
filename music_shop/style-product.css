@@ -1,0 +1,88 @@
+body {
+    font-family: 'Inria Sans', Inria Sans;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    background-color: #9CD3EB;
+}
+
+h1 {
+    font-family: 'Inria Sans', Inria Sans;
+    font-size: 4vh;
+    font-weight: 400;
+}
+
+.Product_Wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin: 100px 100px 100pxpx 100px;
+}
+
+.product_photo {
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    margin-top:50px;
+}
+.product_photo img {
+    width: 80%;
+
+}
+
+.product_text p {
+    margin: 30px 0;
+}
+form label, form input {
+    font-weight: 700;
+}
+
+#quantity {
+    width: 50px;
+    padding: 2px;
+    border: none;
+}
+
+#btn-addtocart {
+    margin: 30px 0;
+}
+.tracklist {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px 0;
+    width: 70%;
+    margin: auto;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}

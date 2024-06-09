@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style_sign_in.css">
+  <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
+  <title>Login</title>
+  
+</head>
+<body>
+
+  <h1>Login</h1>
+
+  <form id="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="Username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="Password" name="password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script>
+
+  <!-- Backbone.js Code -->
+  <script>
+    var UserModel = Backbone.Model.extend({
+      defaults: {
+        username: '',
+        password: ''
+      }
+    });
+
+    var LoginView = Backbone.View.extend({
+      el: '#login-form',
+
+      events: {
+        'submit': 'submitForm'
+      },
+
+      initialize: function() {
+        this.model = new UserModel();
+      },
+
+      submitForm: function(e) {
+        e.preventDefault();
+        var username = this.$('#Username').val();
+        var password = this.$('#Password').val();
+
+        if (username === 'musicshop' && password === '12345') {
+          alert('Authentication successful!');
+        } else {
+          alert('Authentication failed. Please check your username and password.');
+        }
+      }
+    });
+
+    var login_view = new LoginView();
+  </script>
+
+</body>
+</html>

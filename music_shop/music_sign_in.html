@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style_sign_in.css">
+        <link href='https://fonts.googleapis.com/css?family=Inria Sans' rel='stylesheet'>
+        <title>The MusicShop</title>
+    </head>
+
+    <body>
+        <a name="WelcomeSection"></a>
+        <header>
+            <a href="#WelcomeSection" id="logo">THE MUSICSHOP</a>
+           
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="music_shop.html">Shop</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="music_sign_in.html">Sign in</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          
+            <section id="authorize">
+                <br> <br>
+                <h2>Registration</h2>
+                <form>
+                    <label for="regName">First Name:</label><br>
+                    <input type="text" id="regName" name="regName" required>
+                    <br><br>
+                    <label for="regSurname">Last Name:</label><br>
+                    <input type="text" id="regSurname" name="regSurname" required>
+                    <br><br>
+                    <label for="regEmail">Email:</label><br>
+                    <input type="text" id="regEmail" name="regEmail" required>
+                    <br><br>
+                    <label for="regPhone">Phone Number:</label><br>
+                    <input type="text" id="regPhone" name="regPhone" required>
+                    <br><br>
+                    <label for="regPassword">Password:</label><br>
+                    <input type="password" id="regPassword" name="regPassword" required>
+                    <br><br>
+                    <label for="repeatPassword">Repeat Password:</label><br>
+                    <input type="password" id="repeatPassword" name="repeatPassword" required>
+                    <br><br>
+                    <button type="submit">Register</button>
+                </form>
+            
+                <h2>Login</h2>
+                <form>
+                    <label for="loginUsername">Email or Phone Number:</label><br>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                    <br><br>
+                    <label for="loginPassword">Password:</label><br>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                    <br><br>
+                    <button type="submit">Log In</button>
+                </form>
+            </section>
+        </main>
+    </body>
